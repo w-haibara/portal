@@ -7,9 +7,9 @@ import (
 
 func Run() error {
 	items := []list.Item{
-		item{title: "Raspberry Pi’s", desc: "I have ’em all over my house"},
-		item{title: "Nutella", desc: "It's good on toast"},
-		item{title: "Terrycloth", desc: "In other words, towel fabric"},
+		listItem{title: "Raspberry Pi’s", desc: "I have ’em all over my house"},
+		listItem{title: "Nutella", desc: "It's good on toast"},
+		listItem{title: "Terrycloth", desc: "In other words, towel fabric"},
 	}
 
 	m := model{list: list.New(items, list.NewDefaultDelegate(), 0, 0)}
